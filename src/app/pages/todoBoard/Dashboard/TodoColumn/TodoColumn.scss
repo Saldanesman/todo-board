@@ -15,6 +15,6 @@
   }
 
   &__tasks{
-    background-color: red;
+    @include padding(2.5);
   }
 }

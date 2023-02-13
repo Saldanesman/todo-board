@@ -1,0 +1,51 @@
+@import '../../../../assets/settings/main.scss';
+
+.tb-c-task {
+  @include padding(2.5);
+  @include marginBottom(2.5);
+  @extend .letterSpacing;
+  @extend .fontType;
+  background-color: $white;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &__name {
+    @extend .fontS;
+    color: $tb-black-dark;
+  }
+
+  &__info {
+
+    &__date {
+      color: $grey-2;
+    }
+
+    &__type-and-prio {
+      display: flex;
+
+      &__type {
+        display: flex;
+        justify-content: center;
+        background-color: $tb-semi-orange;
+        border-radius: $border-radius;
+        width: 75%;
+
+        &__title {
+          @extend .fontS;
+          font-weight: bold;
+        }
+      }
+
+      &__priority {
+        display: flex;
+        justify-content: center;
+
+        &__title {
+          @extend .fontS;
+          font-weight: bold;
+          color: $tb-black-dark;
+        }
+      }
+    }
+  }
+}
