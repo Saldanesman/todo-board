@@ -1,0 +1,33 @@
+@import '../../../assets/settings/main.scss';
+
+.tb-c-searcher {
+  @include marginTop(0);
+  @extend .letterSpacing;
+  @extend .fontType;
+  border-radius: $border-radius;
+  background-color: $white;
+  display: flex;
+  border: 2px solid $tb-black-dark;
+
+  &__icon {
+    width: 10%;
+    background-color: pink;
+  }
+
+  &__field {
+    width: 85%;
+
+    &__input {
+      border: none;
+      width: 100%;
+
+      &:focus {
+        border: none;
+      }
+    }
+
+    
+  }
+  
+
+}

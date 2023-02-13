@@ -1,5 +1,5 @@
 import Header from '../../layout/Header/Header';
-import Dashboard from './Dashboard/Dashboard';
+import Dashboard from './todoBoard/Dashboard/Dashboard';
 import './Home.scss';
 
 

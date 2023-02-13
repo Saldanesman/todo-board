@@ -1,0 +1,29 @@
+@import '../../../assets/settings/main.scss';
+
+.tb-c-header {
+  @include marginTop(0);
+  @include padding(2.5);
+  @extend .letterSpacing;
+  @extend .fontType;
+  display: flex;
+  background-color: $white;
+  top: 0;
+
+  border-bottom: 2px solid black;
+
+  &__logo{
+    width: 25%;
+    left: 0;
+    background-color: red;
+  }
+
+  &__options{
+    display: flex;
+    width: 75%;
+    background-color: blue;
+
+    &__searcher {
+      width: 30%;
+    }
+  }
+}

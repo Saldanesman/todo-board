@@ -1,3 +1,18 @@
 @import './settings.colors.scss';
 @import './settings.mixins.scss';
 @import './settings.typography.scss';
+
+
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Switzer', sans-serif;
+}

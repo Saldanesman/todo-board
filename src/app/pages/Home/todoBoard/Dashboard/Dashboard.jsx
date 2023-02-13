@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Task from '../../todoBoard/Task/Task';
+import Task from '../Task/Task';
 import './Dashboard.scss';
 import listMock from './tasksMock';
 
@@ -18,7 +18,7 @@ const Dashboard = () => {
     setLocked(listMock.locked);
     setDone(listMock.done);
 	}, []);
-  
+
 
 	return (
 		<div className={'tb-c-dashboard'}>
