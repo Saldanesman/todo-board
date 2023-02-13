@@ -1,14 +1,30 @@
 @import '../../../../assets/settings/main.scss';
 
 .tb-c-dashboard {
+  @extend .letterSpacing;
+  @extend .fontType;
+
   &__columns {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
-    
+
     &__column {
       background-color: $tb-semi-yellow;
       min-height: 100%;
+
+      &__title {
+        @include paddingTop(2.5);
+        @include paddingBottom(2.5);
+        @include paddingLeft(2.5);
+        @extend .fontS;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      &__card{
+        @include padding(2.5);
+      }
     }
   }
 }

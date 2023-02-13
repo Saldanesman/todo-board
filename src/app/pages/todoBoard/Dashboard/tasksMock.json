@@ -1,0 +1,55 @@
+{
+  "todo": [
+    {
+      "id": 0,
+      "name": "This is my first task",
+      "description": "Is good do it for keep clened my house",
+      "type": "House",
+      "priority": 2,
+      "created": "15-02-2010",
+      "deadline": ""
+    },
+    {
+      "id": 1,
+      "name": "University: Algebra",
+      "description": "Do the homework for tomorrow",
+      "type": "university",
+      "priority": 5,
+      "created": "5-08-2020",
+      "deadline": "15-03-2023"
+    }
+  ],
+  "inProgress": [
+    {
+      "id": 4,
+      "name": "Go gym",
+      "description": "",
+      "type": "sport",
+      "priority": 5,
+      "created": "5-08-2020",
+      "deadline": ""
+    }
+  ],
+  "locked": [
+    {
+      "id": 3,
+      "name": "Hogwarts Legacy",
+      "description": "",
+      "type": "free time",
+      "priority": 5,
+      "created": "5-08-2020",
+      "deadline": ""
+    }
+  ],
+  "done": [
+    {
+      "id": 5,
+      "name": "AAA",
+      "description": "",
+      "type": "",
+      "priority": 5,
+      "created": "5-08-2020",
+      "deadline": ""
+    }
+  ]
+}
