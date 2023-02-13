@@ -1,0 +1,14 @@
+@import '../../../../assets/settings/main.scss';
+
+.tb-c-dashboard {
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    
+    &__column {
+      background-color: $tb-semi-yellow;
+      min-height: 100%;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 $tb-black-dark: #0e0e0e;
 
+$tb-semi-yellow: #fff8e0;
+
 $white: #fff;
 $grey-1: #f9f8fb;
 $grey-2: #efeff2;
@@ -13,6 +15,7 @@ $text-color: $grey-7;
 
 :export {
   tb-black-dark: $tb-black-dark;
+  tb-semi-yellow: $tb-semi-yellow;
   white: $white;
   $text-color: $grey-7;
 }
