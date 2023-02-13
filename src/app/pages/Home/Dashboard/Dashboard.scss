@@ -12,6 +12,7 @@
     &__column {
       background-color: $tb-semi-yellow;
       min-height: 100%;
+      border: 2px solid $tb-black-dark;
 
       &__title {
         @include paddingTop(2.5);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Dashboard from '../pages/todoBoard/Dashboard/Dashboard';
+import Home from '../pages/Home/Home';
 
 
 
@@ -10,7 +10,7 @@ const Content = () => {
 	const location = useLocation();
 	return (
 		<Routes location={location} key={location.pathname}>
-			<Route path={'/'} element={<Dashboard />} />
+			<Route path={'/'} element={<Home />} />
 			<Route
 				path={'*'}
 				element={
