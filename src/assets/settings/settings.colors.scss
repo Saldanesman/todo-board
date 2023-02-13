@@ -1,0 +1,18 @@
+$tb-black-dark: #0e0e0e;
+
+$white: #fff;
+$grey-1: #f9f8fb;
+$grey-2: #efeff2;
+$grey-3: #e3e3e6;
+$grey-4: #bfbfc3;
+$grey-5: #757481;
+$grey-6: #666573;
+$grey-7: #161230;
+
+$text-color: $grey-7;
+
+:export {
+  tb-black-dark: $tb-black-dark;
+  white: $white;
+  $text-color: $grey-7;
+}

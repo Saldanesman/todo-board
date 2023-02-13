@@ -1,0 +1,11 @@
+@import '../../../assets/settings/main.scss';
+
+.tb-c-error-404 {
+  &__title {
+    color: $tb-black-dark;
+  }
+
+  &__link {
+    color: red;
+  }
+}
