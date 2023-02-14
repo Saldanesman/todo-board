@@ -10,7 +10,7 @@ import './Header.scss';
 const Header = () => {
   const [isSelected, setIsSelected] = useState(false);
 
-  const toggleIcon =() => {
+  const toggleIcon = () => {
     setIsSelected(!isSelected);
   };
 

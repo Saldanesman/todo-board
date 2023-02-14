@@ -8,20 +8,22 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    background-color: green;
 
     &__title {
     @extend .fontXXL;
     @include paddingLeft(7.5);
-
+    background-color: red;
     color: $tb-black-dark;
     font-weight: bold;
     }
 
     &__info {
+      background-color: red;
       @include marginLeft(5);
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items:end;
       width: 1.5rem;
       height: 1.5rem;
       border: 2px solid $tb-border-grey;
@@ -43,13 +45,35 @@
       min-height: 100%;
       border-radius: $border-radius;
 
-      &__title {
-        @include paddingTop(2.5);
-        @include paddingBottom(2.5);
-        @include paddingLeft(2.5);
-        @extend .fontS;
-        text-transform: uppercase;
-        font-weight: bold;
+      &__head {
+        display: flex;
+        align-items: center;
+
+        &__title {
+          @include paddingTop(2.5);
+          @include paddingBottom(2.5);
+          @include paddingLeft(2.5);
+          @extend .fontS;
+          text-transform: uppercase;
+          font-weight: bold;
+          width: 80%;
+        }
+
+        &__add {
+          @include padding(2.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20%;
+          border: none;
+          background-color: transparent;
+          
+          &__icon {
+            cursor: pointer;
+            height: 2em;
+            width: 2em;
+          }
+        }
       }
 
       &__card{

@@ -1,0 +1,10 @@
+@import '../../../assets/settings/main.scss';
+
+.tb-c-dialog-task-card {
+  @include padding(0);
+  @extend .letterSpacing;
+  @extend .fontType;
+  width: 60em;
+  height: 20em;
+  z-index: 100;
+}
