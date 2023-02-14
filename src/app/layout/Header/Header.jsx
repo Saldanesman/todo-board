@@ -1,9 +1,18 @@
 
+import { useState } from 'react';
 import Searcher from '../../common/Searcher/Sercher';
+import {ReactComponent as BackBoard} from '../../../assets/images/backlog-icon.svg';
+import {ReactComponent as DashBoard} from '../../../assets/images/dashboard-icon.svg';
+import {ReactComponent as User} from '../../../assets/images/user.svg';
 import './Header.scss';
 
 
 const Header = () => {
+  const [isSelected, setIsSelected] = useState(false);
+
+  const toggleIcon =() => {
+    setIsSelected(!isSelected);
+  };
 
 	return (
 		<div className={'tb-c-header'}>
@@ -12,11 +21,12 @@ const Header = () => {
         <div className={'tb-c-header__options__searcher'}>
           <Searcher />
         </div>
-        <div className={'tb-c-header__options__boards-toggle'}>
-          BackBoard
-        </div>
+        <button className={'tb-c-header__options__boards-toggle'}>
+          {!isSelected && <BackBoard className={'tb-c-header__options__boards-toggle__icon'} onClick={toggleIcon} />}
+          {isSelected && <DashBoard className={'tb-c-header__options__boards-toggle__icon'} onClick={toggleIcon} />}
+        </button>
         <div className={'tb-c-header__options__my-profile'}>
-          Me
+          <User className={'tb-c-header__options__my-profile__icon'} />
         </div>
       </div>
     </div>

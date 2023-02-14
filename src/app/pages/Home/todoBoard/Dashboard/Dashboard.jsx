@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import {ReactComponent as Info} from '../../../../../assets/images/info.svg';
 import Task from '../Task/Task';
 import './Dashboard.scss';
 import listMock from './tasksMock';
@@ -11,6 +12,7 @@ const Dashboard = () => {
   const [inProgress, setInProgress] = useState([]);
   const [locked, setLocked] = useState([]);
   const [done, setDone] = useState([]);
+  const [title, setTitle] = useState('TO DO Board');
 
 	useEffect(() => {
 		setTodo(listMock.todo);
@@ -19,9 +21,18 @@ const Dashboard = () => {
     setDone(listMock.done);
 	}, []);
 
+  const toggleTitle = (title) => {
+    if (title === 'To do Board') setTitle('Done Board');
+    else setTitle('To do Board');
+  };
+
 
 	return (
 		<div className={'tb-c-dashboard'}>
+       <div className={'tb-c-dashboard__header'}>
+        <h1 className={'tb-c-dashboard__header__title'}> {title} </h1>
+        <Info className={'tb-c-dashboard__header__info'} />
+       </div>
       <div className={'tb-c-dashboard__columns'}>
         <div className={'tb-c-dashboard__columns__column'}>
           <h1 className={'tb-c-dashboard__columns__column__title'}> To do {todo.length}</h1>

@@ -8,22 +8,54 @@
   display: flex;
   background-color: $white;
   top: 0;
-
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $tb-semi-yellow;
 
   &__logo{
     width: 25%;
     left: 0;
-    background-color: red;
   }
 
   &__options{
+    @include marginRight(2.5);
     display: flex;
+    justify-content: right;
     width: 75%;
-    background-color: blue;
+    
 
     &__searcher {
+      @include marginRight(25);
       width: 30%;
+    }
+
+    &__boards-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5%;
+      background-color: transparent;
+      border: none;
+
+      &__icon {
+        // border: 3px solid $tb-black-dark;
+        // border-radius: $border-radius;
+        width: 2em;
+        cursor: pointer;
+      }
+    }
+
+    &__my-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      height: 100%;
+
+      &__icon {
+        border: 2px solid $tb-black-dark;
+        border-radius: 50%;
+        cursor: pointer;
+      }
     }
   }
 }

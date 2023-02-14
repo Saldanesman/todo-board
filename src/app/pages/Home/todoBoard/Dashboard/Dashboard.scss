@@ -4,7 +4,36 @@
   @extend .letterSpacing;
   @extend .fontType;
 
+  &__header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    &__title {
+    @extend .fontXXL;
+    @include paddingLeft(7.5);
+
+    color: $tb-black-dark;
+    font-weight: bold;
+    }
+
+    &__info {
+      @include marginLeft(5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 2px solid $tb-border-grey;
+      border-radius: $border-radius;
+    }
+  }
+  
+
   &__columns {
+    @include paddingRight(15);
+    @include paddingLeft(15);
+    @include paddingBottom(7.5);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2.5rem;
@@ -12,7 +41,7 @@
     &__column {
       background-color: $tb-semi-yellow;
       min-height: 100%;
-      border: 2px solid $tb-black-dark;
+      border-radius: $border-radius;
 
       &__title {
         @include paddingTop(2.5);

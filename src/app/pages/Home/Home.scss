@@ -5,8 +5,4 @@
   @extend .letterSpacing;
   @extend .fontType;
   background-color: $white;
-
-  &__board {
-    @include padding(7.5);
-  }
 }
